@@ -157,7 +157,7 @@ class CartPoleAgent():
         )
         #shape = (examples,)
         best_Q_values = np.mean(
-            Q_predictions[np.arange(len(Q_predictions)), heads, action, 0],
+            Q_predictions[np.arange(len(Q_predictions)), heads, action, :],
             axis=-1
         )
         #shape = (examples,)
